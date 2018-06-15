@@ -22,6 +22,12 @@ namespace AddTwoInts
         }
     }
 
+    public abstract class Integer
+    {
+        public static implicit operator int(Integer origin) => origin.Value();
+        protected abstract int Value();
+    }
+
     public class Sum : ISum
     {
         private readonly int _augend;
