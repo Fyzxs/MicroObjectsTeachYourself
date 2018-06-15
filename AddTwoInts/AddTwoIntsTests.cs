@@ -12,9 +12,10 @@ namespace AddTwoInts
             int expected = 9;
             int augend = 4;
             int addend = 5;
+            Sum subject = new Sum(augend, addend);
 
             //Act
-            int actual = new Sum(augend, addend).Value();
+            int actual = subject.Value();
 
             //Assert
             Assert.AreEqual(expected, actual);
