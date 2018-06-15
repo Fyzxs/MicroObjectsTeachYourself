@@ -28,6 +28,15 @@ namespace AddTwoInts
         protected abstract int Value();
     }
 
+    public class IntegerOf : Integer
+    {
+        private readonly int _origin;
+
+        public IntegerOf(int origin) => _origin = origin;
+
+        protected override int Value() => _origin;
+    }
+
     public class Sum : ISum
     {
         private readonly int _augend;
