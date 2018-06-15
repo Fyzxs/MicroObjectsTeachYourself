@@ -9,9 +9,9 @@ namespace AddTwoInts
         public void ShouldReturnSumOfTwoInts()
         {
             //Arrange
-            int expected = 9;
-            int augend = 4;
-            int addend = 5;
+            Integer expected = new IntegerOf(9);
+            Integer augend = new IntegerOf(4);
+            Integer addend = new IntegerOf(5);
             ISum subject = new Sum(augend, addend);
 
             //Act
