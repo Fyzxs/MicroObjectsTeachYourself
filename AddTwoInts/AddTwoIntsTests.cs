@@ -28,7 +28,7 @@ namespace AddTwoInts
         protected abstract int Value();
     }
 
-    public class IntegerOf : Integer
+    public sealed class IntegerOf : Integer
     {
         private readonly int _origin;
 
@@ -37,7 +37,7 @@ namespace AddTwoInts
         protected override int Value() => _origin;
     }
 
-    public class Sum : ISum
+    public sealed class Sum : ISum
     {
         private readonly int _augend;
         private readonly int _addend;
