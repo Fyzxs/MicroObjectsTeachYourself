@@ -12,7 +12,7 @@ namespace AddTwoInts
             int expected = 9;
             int augend = 4;
             int addend = 5;
-            Sum subject = new Sum(augend, addend);
+            ISum subject = new Sum(augend, addend);
 
             //Act
             int actual = subject.Value();
@@ -22,7 +22,7 @@ namespace AddTwoInts
         }
     }
 
-    public class Sum
+    public class Sum : ISum
     {
         private readonly int _augend;
         private readonly int _addend;
@@ -37,5 +37,10 @@ namespace AddTwoInts
         {
             return _augend + _addend;
         }
+    }
+
+    public interface ISum
+    {
+        int Value();
     }
 }
