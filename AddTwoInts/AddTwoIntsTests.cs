@@ -12,10 +12,10 @@ namespace AddTwoInts
             Integer expected = new IntegerOf(9);
             Integer augend = new IntegerOf(4);
             Integer addend = new IntegerOf(5);
-            ISum subject = new Sum(augend, addend);
+            Integer subject = new Sum(augend, addend);
 
             //Act
-            int actual = subject.Value();
+            int actual = subject;
 
             //Assert
             Assert.AreEqual(expected, actual);
@@ -37,7 +37,7 @@ namespace AddTwoInts
         protected override int Value() => _origin;
     }
 
-    public sealed class Sum : ISum
+    public sealed class Sum : Integer
     {
         private readonly int _augend;
         private readonly int _addend;
@@ -48,14 +48,6 @@ namespace AddTwoInts
             _addend = addend;
         }
 
-        public int Value()
-        {
-            return _augend + _addend;
-        }
-    }
-
-    public interface ISum
-    {
-        int Value();
+        protected override int Value() => _augend + _addend;
     }
 }
