@@ -14,15 +14,27 @@ namespace AddTwoInts
             int addend = 5;
 
             //Act
-            int actual = Sum(augend, addend);
+            int actual = new Sum(augend, addend).Value();
 
             //Assert
             Assert.AreEqual(expected, actual);
         }
+    }
 
-        private int Sum(int augend, int addend)
+    public class Sum
+    {
+        private readonly int _augend;
+        private readonly int _addend;
+
+        public Sum(int augend, int addend)
         {
-            return augend + addend;
+            _augend = augend;
+            _addend = addend;
+        }
+
+        public int Value()
+        {
+            return _augend + _addend;
         }
     }
 }
