@@ -10,17 +10,19 @@ namespace OutputData
         [TestMethod]
         public void ShouldOutputFromInt()
         {
-            new ConsoleWrite().Into(new IntegerOf(3));
+            IWrite writer = new ConsoleWrite();
+            Integer integer = new IntegerOf(3);
+            integer.Into(writer);
         }
     }
 
     public class ConsoleWrite : IWrite
     {
-        public void Into(Integer item) => Console.WriteLine(item);
+        public void Write(Integer item) => Console.WriteLine(item);
     }
 
     public interface IWrite
     {
-        void Into(Integer item);
+        void Write(Integer item);
     }
 }
