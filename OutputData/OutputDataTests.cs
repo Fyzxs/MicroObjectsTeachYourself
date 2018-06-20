@@ -22,7 +22,7 @@ namespace OutputData
             Integer integer = new IntegerOf(3);
             integer.Into(fakeWrite);
 
-            Assert.AreEqual((int)integer, fakeWrite.Item);
+            Assert.AreEqual((int)integer, fakeWrite.Item);//Duplicate More From AddTwoInts?
         }
 
         private class FakeWrite : IWrite
