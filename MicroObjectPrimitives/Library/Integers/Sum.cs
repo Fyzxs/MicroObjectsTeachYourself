@@ -1,4 +1,4 @@
-namespace AddTwoInts.Library.Integers
+namespace MicroObjectPrimitives.Library.Integers
 {
     public sealed class Sum : Integer
     {

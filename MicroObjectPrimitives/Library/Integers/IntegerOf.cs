@@ -1,4 +1,4 @@
-namespace OutputData.Library.Integers {
+namespace MicroObjectPrimitives.Library.Integers {
     public sealed class IntegerOf : Integer
     {
         private readonly int _origin;

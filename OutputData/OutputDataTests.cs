@@ -1,6 +1,6 @@
+using MicroObjectPrimitives.Library.Integers;
+using MicroObjectPrimitives.Library.Writers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OutputData.Library.Integers;
-using OutputData.Library.Writers;
 
 namespace OutputData
 {

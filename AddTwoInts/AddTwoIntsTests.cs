@@ -1,4 +1,4 @@
-using AddTwoInts.Library.Integers;
+using MicroObjectPrimitives.Library.Integers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace AddTwoInts

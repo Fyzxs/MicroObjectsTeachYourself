@@ -1,7 +1,7 @@
-using OutputData.Library.Integers;
+using MicroObjectPrimitives.Library.Integers;
 using System;
 
-namespace OutputData.Library.Writers
+namespace MicroObjectPrimitives.Library.Writers
 {
     public sealed class ConsoleWrite : IWrite
     {

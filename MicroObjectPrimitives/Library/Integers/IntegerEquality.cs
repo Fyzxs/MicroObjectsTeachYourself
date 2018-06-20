@@ -1,6 +1,6 @@
-using AddTwoInts.Library.Bools;
+using MicroObjectPrimitives.Library.Bools;
 
-namespace AddTwoInts.Library.Integers
+namespace MicroObjectPrimitives.Library.Integers
 {
     public sealed class IntegerEquality : Bool
     {
