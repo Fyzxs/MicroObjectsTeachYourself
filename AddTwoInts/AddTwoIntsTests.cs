@@ -51,7 +51,7 @@ namespace AddTwoInts
         protected override int Value() => _augend + _addend;
     }
 
-    public class IntegerEquality : Bool
+    public sealed class IntegerEquality : Bool
     {
         private readonly Integer _lhs;
         private readonly Integer _rhs;
