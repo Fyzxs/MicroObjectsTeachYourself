@@ -1,6 +1,7 @@
 using AddTwoInts.Library.Bools;
 
-namespace AddTwoInts.Library.Integers {
+namespace AddTwoInts.Library.Integers
+{
     public abstract class Integer
     {
         public static implicit operator int(Integer origin) => origin.Value();

@@ -1,6 +1,7 @@
 using AddTwoInts.Library.Bools;
 
-namespace AddTwoInts.Library.Integers {
+namespace AddTwoInts.Library.Integers
+{
     public sealed class IntegerEquality : Bool
     {
         private readonly Integer _lhs;

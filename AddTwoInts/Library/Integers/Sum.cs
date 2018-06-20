@@ -1,4 +1,5 @@
-namespace AddTwoInts.Library.Integers {
+namespace AddTwoInts.Library.Integers
+{
     public sealed class Sum : Integer
     {
         private readonly int _augend;
