@@ -1,3 +1,5 @@
+using OutputData.Library.Writers;
+
 namespace OutputData.Library.Integers
 {
     public abstract class Integer

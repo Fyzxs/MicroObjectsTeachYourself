@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OutputData.Library.Integers;
-using System;
+using OutputData.Library.Writers;
 
 namespace OutputData
 {
@@ -14,15 +14,5 @@ namespace OutputData
             Integer integer = new IntegerOf(3);
             integer.Into(writer);
         }
-    }
-
-    public class ConsoleWrite : IWrite
-    {
-        public void Write(Integer item) => Console.WriteLine(item);
-    }
-
-    public interface IWrite
-    {
-        void Write(Integer item);
     }
 }
