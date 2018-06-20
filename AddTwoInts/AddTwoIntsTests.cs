@@ -12,7 +12,7 @@ namespace AddTwoInts
             Integer expected = new IntegerOf(9);
             Integer augend = new IntegerOf(4);
             Integer addend = new IntegerOf(5);
-            Integer subject = new Sum(augend, addend);
+            Integer subject = augend.Add(addend);
 
             //Act
             //Assert
@@ -25,6 +25,7 @@ namespace AddTwoInts
         public static implicit operator int(Integer origin) => origin.Value();
         protected abstract int Value();
         public Bool IsEqual(Integer other) => new IntegerEquality(this, other);
+        public Integer Add(Integer addend) => new Sum(this, addend);
     }
 
     public sealed class IntegerOf : Integer
