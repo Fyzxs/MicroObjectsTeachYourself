@@ -15,10 +15,10 @@ namespace AddTwoInts
             Integer subject = new Sum(augend, addend);
 
             //Act
-            int actual = subject;
+            Bool integerEquality = new IntegerEquality(subject, expected);
 
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.IsTrue(integerEquality);
         }
     }
 
@@ -49,5 +49,25 @@ namespace AddTwoInts
         }
 
         protected override int Value() => _augend + _addend;
+    }
+
+    public class IntegerEquality : Bool
+    {
+        private readonly Integer _lhs;
+        private readonly Integer _rhs;
+
+        public IntegerEquality(Integer lhs, Integer rhs)
+        {
+            _lhs = lhs;
+            _rhs = rhs;
+        }
+
+        protected override bool Value() => (int)_lhs == _rhs;
+    }
+
+    public abstract class Bool
+    {
+        public static implicit operator bool(Bool origin) => origin.Value();
+        protected abstract bool Value();
     }
 }
