@@ -15,10 +15,8 @@ namespace AddTwoInts
             Integer subject = new Sum(augend, addend);
 
             //Act
-            Bool integerEquality = new IntegerEquality(subject, expected);
-
             //Assert
-            Assert.IsTrue(integerEquality);
+            Assert.IsTrue(subject.IsEqual(expected), $"Actual <{(int)subject}> was not the same as Expected <{(int)expected}>");
         }
     }
 
@@ -26,6 +24,7 @@ namespace AddTwoInts
     {
         public static implicit operator int(Integer origin) => origin.Value();
         protected abstract int Value();
+        public Bool IsEqual(Integer other) => new IntegerEquality(this, other);
     }
 
     public sealed class IntegerOf : Integer
