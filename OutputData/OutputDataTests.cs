@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OutputData.Library.Integers;
 using System;
 
 namespace OutputData
@@ -9,7 +10,7 @@ namespace OutputData
         [TestMethod]
         public void ShouldOutputFromInt()
         {
-            Console.WriteLine(3);
+            Console.WriteLine(new IntegerOf(3));
         }
     }
 }
