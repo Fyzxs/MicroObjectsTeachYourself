@@ -2,10 +2,10 @@ using MicroObjectPrimitives.Library.Integers;
 using MicroObjectPrimitives.Library.Writers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace OutputData
+namespace DisplayData
 {
     [TestClass]
-    public class OutputDataTests
+    public class DisplayDataTests
     {
         [TestMethod]
         public void ShouldOutputFromInt()

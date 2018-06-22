@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddTwoInts", "AddTwoInts\AddTwoInts.csproj", "{E96DCAC5-2AF5-4C7C-8655-AF2BD5372C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputData", "OutputData\OutputData.csproj", "{1E2888AE-680B-4732-9522-1236982153D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisplayData", "DisplayData\DisplayData.csproj", "{1E2888AE-680B-4732-9522-1236982153D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroObjectPrimitives", "MicroObjectPrimitives\MicroObjectPrimitives.csproj", "{02A85AD7-E701-4FD0-8A51-8578AAF19F67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroObjectPrimitives", "MicroObjectPrimitives\MicroObjectPrimitives.csproj", "{02A85AD7-E701-4FD0-8A51-8578AAF19F67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
