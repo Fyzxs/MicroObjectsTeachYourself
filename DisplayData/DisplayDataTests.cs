@@ -11,8 +11,8 @@ namespace DisplayData
         public void ShouldOutputFromInt()
         {
             IWrite writer = new ConsoleWrite();
-            Integer integer = new IntegerOf(3);
-            integer.Into(writer);
+            IInto value = new IntegerOf(3);
+            value.Into(writer);
         }
 
         [TestMethod]
@@ -22,7 +22,8 @@ namespace DisplayData
             Integer integer = new IntegerOf(3);
             integer.Into(fakeWrite);
 
-            Assert.AreEqual((int)integer, fakeWrite.Item);//Duplicate More From AddTwoInts?
+
+            Assert.IsTrue(integer.IsEqual(fakeWrite.Item));
         }
 
         private class FakeWrite : IWrite

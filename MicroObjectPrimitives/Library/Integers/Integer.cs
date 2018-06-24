@@ -3,7 +3,7 @@ using MicroObjectPrimitives.Library.Writers;
 
 namespace MicroObjectPrimitives.Library.Integers
 {
-    public abstract class Integer
+    public abstract class Integer : IInto
     {
         public static implicit operator int(Integer origin) => origin.Value();
         protected abstract int Value();
